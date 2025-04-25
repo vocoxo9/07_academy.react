@@ -1,26 +1,21 @@
 import { Link } from 'react-router-dom';
-import { styled } from 'styled-components';
+/*
+const menuInfo = [
+    {pathname: "/", text: "HOME"},
+    {pathname: "/basic", text: "BASIC"}
+];
+*/
 
-const MenuStyle = styled(Link)`
-    background: transparent;
-    border-radius: 3px;
-    border: 2px solid #BF4F74;
-    color: #BF4F74;
-    margin: 0 1em;
-    padding: 0.25em 1em;
-`;
-
-export default function MenuBar({ menuInfo }) {
-
+function MenuBar({ menuInfo }) {
     return (
-        <>
-            {menuInfo.map((menu) => {
+        <div className="menu-bar">
+            {menuInfo.map((menu, idx)=>{
                 return (
-                    <Link to={menu.pathname} > {menu.text}</Link>
+                    <Link key={"Link_"+idx} to={menu.pathname}>{menu.text}</Link>
                 )
             })}
-        </>
+        </div>
     );
-
-
 }
+
+export default MenuBar;
