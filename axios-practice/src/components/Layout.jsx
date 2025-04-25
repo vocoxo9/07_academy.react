@@ -3,6 +3,7 @@ import BasicPractice from '../pages/BasicPractice';
 import APIPractice from '../pages/APIPractice';
 import DogComponent from './DogComponent';
 import CatComponent from './CatComponent';
+import MyAPIComponent from './MyAPIComponent';
 
 export default function Layout(){
     return (
@@ -14,6 +15,7 @@ export default function Layout(){
             <Route path="/api" element={<APIPractice/>}>
                 <Route index element={<CatComponent/>} />
                 <Route path="dog" element={<DogComponent/>} />
+                <Route path="my" element={<MyAPIComponent />} />
             </Route>
 
             <Route path="*" element={<h1>404 NotFound</h1>}></Route>
