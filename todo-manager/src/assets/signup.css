@@ -1,0 +1,54 @@
+
+.signupForm {
+    text-align: center;
+    margin-top : 15rem;
+    width : 100%;
+}
+
+.signupForm form {
+    width : 500px;
+    height : 520px;
+    border : 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+    margin : auto;
+}
+.signupForm input {
+    width : 400px;
+    height : 45px;
+    margin : 0.5rem;    
+    border : 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+}
+.signupForm .short{
+    width : 290px;
+}
+
+.signupForm button {
+    width : 400px;
+    height : 60px;
+    background-color: #5087B5;
+    color : white;
+    font-weight : bold;
+    border : 1px solid #d9d9d9;
+    border-radius : 0.3rem;
+}
+
+.signupForm .check{
+    width : 100px;
+    height : 49px;
+    background-color: white;
+    color : black;
+    border : 1px solid #dddddd;
+    font-size : 0.9rem;
+}
+
+.signupForm h2 {
+    color : #5087B5;
+    font-weight : bold;
+    margin : 2rem;
+}
+
+.signupForm hr{
+    margin : 1rem 3rem;
+    border : 1px solid #d9d9d9;
+}

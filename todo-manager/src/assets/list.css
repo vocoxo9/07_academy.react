@@ -1,0 +1,42 @@
+.list{
+    width : 90%;
+    height : 7%;
+    background-color: #ffffff;
+    /* display : flex; */
+    margin : auto;
+    border : 1px solid #dddddd;
+    border-radius : 0.3rem;
+    margin-bottom : 1rem;
+}
+.list-left { 
+    float : left;
+    width : 85%;
+}
+.list-left p{
+    padding : 0.6rem;
+    padding-left : 1rem;
+    font-weight : bold;
+}
+.list-right { 
+    float : right;
+    width : 15%;
+    margin-top : 0.3rem;
+}
+#complete{
+    width : 50px;
+    height : 50px;
+    background-color: #6baf92;
+    color : white;
+    margin : 0.5rem;
+    border : 1px solid #d9d9d9;
+    border-radius : 5rem;
+}
+#incomplete {
+    width : 50px;
+    height : 50px;
+    background-color: #d46868;
+    color : white;
+    margin : 0.5rem;
+    border : 1px solid #d9d9d9;
+    border-radius : 5rem;
+}

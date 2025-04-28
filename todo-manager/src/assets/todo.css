@@ -1,0 +1,66 @@
+/* left */
+.todo-left{
+    width : 25%;
+    height : 1080px;
+    float : left;
+    background-color: #5087b5;
+    text-align: center;
+}
+
+.todo-left h1{
+    color : white;
+    margin-top : 3rem;
+}
+
+.todo-left .buttons{
+    margin-top : 15rem;
+}
+.todo-left button{
+    width : 340px;
+    height : 70px;
+    background-color: #d9d9d9;
+    color : black;
+    border : 1px solid #d9d9d9;
+    border-radius : 2rem;
+    margin : 1.5rem 0;
+    font-size : 1rem;
+    font-weight : bold;
+}
+.todo-left button:hover{
+    background-color: white;
+    color : #5087b5;
+}
+
+/* right */
+.todo-right {
+    width : 75%;
+    height : 1080px;
+    float : right;
+    background-color: #e9e9e9;
+}
+.todo-right-top{
+    text-align : center;
+    margin : 1rem;
+    margin-top : 5rem;
+    margin-bottom : 2rem;
+}
+
+.todo-right-top input {
+    width : 80%;
+    height : 60px;
+    align-items: center;
+    border : 1px solid #dddddd;
+    border-radius : 5rem;
+}
+.todo-right-top #addTodo{
+    width : 60px;
+    height : 60px;
+    background-color: #ffffff;
+    border : 1px solid #dddddd;
+    border-radius : 5rem;
+    margin : 0;
+}
+.todo-right-top hr{
+    margin : 3rem;
+    border : 1px solid #d9d9d9;
+}

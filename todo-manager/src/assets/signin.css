@@ -1,0 +1,47 @@
+
+.signinForm {
+    width : 100%;
+    text-align: center;
+    margin-top : 15rem;
+}
+
+
+.signinForm form {
+    width : 500px;
+    height : 460px;
+    border : 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+    margin : auto;
+}
+.signinForm input {
+    width : 400px;
+    height : 45px;
+    margin : 0.5rem;    
+    border : 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+}
+
+.signinForm  button {
+    width : 400px;
+    height : 60px;
+    margin : 0.5rem;
+    background-color: #5087B5;
+    color : white;
+    border : 1px solid #d9d9d9;
+    border-radius : 0.3rem;
+    margin-bottom : 1rem;
+    font-size : 1rem;
+}
+
+.signinForm a {
+    text-align: center;
+    color : black;
+    text-decoration : none;
+}
+
+.signinForm h2 {
+    color : #5087B5;
+    font-size : 2rem;
+    font-weight : bold;
+    margin-top : 3rem;
+}
