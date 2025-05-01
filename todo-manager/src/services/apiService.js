@@ -12,7 +12,9 @@ export const sendEmail = async (email) => {
 
 export const verifyEmail = async (email, code) => {
     const response = await apiAxios.post('/email/verify', {email : email, code : code});
-    // console.log(response.data);
-    // if (response.data === 200) 
-    return response.data;
+    if (response.data === 200) {
+        return response.data;
+    } else {
+        
+    }
 }
