@@ -11,3 +11,4 @@ npm run dev
 > npm add 
 react-router-dom (2025-04-30)  
 axios (2025-04-30)
+react-toastify (2025-05-02)
