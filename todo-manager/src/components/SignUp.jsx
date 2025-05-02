@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../assets/signup.css';
 import { checkId, sendEmail, signupUser, verifyEmail } from '../services/apiService';
 import { toast } from 'react-toastify';
-import { errorAlert, successAlert } from '../services/toastUtils';
+import { errorAlert, errorSweetAlert, successAlert, successSweetAlert } from '../services/toastUtils';
 import SignIn from './SignIn';
 import { Route } from 'react-router-dom';
 
@@ -34,9 +34,11 @@ function SignUp() {
             //alert("이미 사용 중인 아이디입니다.");
             // toast("이미 사용 중인 아이디입니다.", {position : 'top-center'});    => 공통적으로 사용하는 부분 묶기
             errorAlert("이미 사용 중인 아이디입니다.");
+            errorSweetAlert("이미 사용 중인 아이디입니다.");
         } else {
             //alert("사용 가능한 아이디입니다!");
             successAlert("사용 가능한 아이디입니다.");
+            successSweetAlert("사용 가능한 아이디입니다.");
         }
     }
 
