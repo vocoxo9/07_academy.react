@@ -34,11 +34,11 @@ function SignUp() {
             //alert("이미 사용 중인 아이디입니다.");
             // toast("이미 사용 중인 아이디입니다.", {position : 'top-center'});    => 공통적으로 사용하는 부분 묶기
             errorAlert("이미 사용 중인 아이디입니다.");
-            errorSweetAlert("이미 사용 중인 아이디입니다.");
+            // errorSweetAlert("이미 사용 중인 아이디입니다.");
         } else {
             //alert("사용 가능한 아이디입니다!");
             successAlert("사용 가능한 아이디입니다.");
-            successSweetAlert("사용 가능한 아이디입니다.");
+            // successSweetAlert("사용 가능한 아이디입니다.");
         }
     }
 
@@ -55,7 +55,7 @@ function SignUp() {
         console.log(result);
         if(result == 'success') {
             successAlert("회원가입이 완료되었습니다!");
-            // <Link to="/signin" ></Link>
+            
             <Route path="/signin" element={<SignIn/>} />
         } else { errorAlert("회원가입에 실패했습니다."); }
 

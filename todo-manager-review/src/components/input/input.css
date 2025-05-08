@@ -1,0 +1,26 @@
+input {
+    width: 100%;
+    height: 45px;
+
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+    margin-bottom: 16px;
+
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=button] {padding:0;}
+
+.btn { border: none; cursor: pointer; margin: 0; }
+.btn-sm { width: 100px; cursor: pointer; }
+
+.btn-sm:hover {
+    filter: brightness(0.9);
+}
+
+.btn-blue { background-color: #5087B5; color: #fff; }
+.btn-white { background-color: #fff; color: #000; }
+.btn-green { background-color: #6BAF92; color: #fff; }
+.btn-red { background-color: #D46868; color: #fff; }

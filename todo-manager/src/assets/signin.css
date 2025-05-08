@@ -6,7 +6,7 @@
 }
 
 
-.signinForm form {
+.signinForm .form {
     width : 500px;
     height : 460px;
     border : 1px solid #d9d9d9;
