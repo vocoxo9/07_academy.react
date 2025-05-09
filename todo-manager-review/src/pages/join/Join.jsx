@@ -38,6 +38,7 @@ export default function Join() {
         if (result === 'success') {
             successAlert("회원가입에 성공했습니다.");
             // 로그인 페이지로 이동!
+            location.href = "/";
         } else {
             errorAlert("회원가입에 실패했습니다.");
         }
