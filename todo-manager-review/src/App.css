@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #AAB4BE;
+}
+
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.f-white { color: white; }
+.f-blue { color: #5087B5; }

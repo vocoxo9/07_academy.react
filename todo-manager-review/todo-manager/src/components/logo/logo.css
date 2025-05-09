@@ -1,0 +1,11 @@
+.logo-area {
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 44px;
+    
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo-area.big {
+    font-size: 34px;
+}

@@ -1,7 +1,27 @@
+import { useContext, useEffect, useState } from 'react';
 import '../assets/todo.css';
-import List from './common/List';
+// import List from './common/List';
+import { getTodoList, insertTodo } from '../services/apiService';
 
 function TodoList() {
+    // const {todos, changeTodos} = useContext(TodoContext);
+    const [content, setContent] = useState("");
+
+    const initailTodos = async() => {
+        const list = await getTodoList();
+        console.log(list);
+
+    }
+
+    // 현재 컴포넌트가 최초 렌더링 되었을 때 목록 조회 요청
+    useEffect(()=>{
+        initailTodos();
+    }, []);
+
+    const clickHandler = async () =>{
+        const result = await insertTodo(content);
+        console.log(result);
+    }
 
     return (
         <>
@@ -15,16 +35,16 @@ function TodoList() {
             </div>
             <div className="todo-right">
                 <div className="todo-right-top">
-                    <input type="text" name="todo" id="todo" placeholder='할 일 입력...'/> <button id="addTodo">+</button>
+                    <input type="text" name="todo" id="todo" placeholder='할 일 입력...' onChange={(e)=>setContent(e.target.value)} /> <button id="addTodo" onClick={clickHandler}>+</button>
                     <hr />
                 </div>
+                {/* <List />
                 <List />
                 <List />
                 <List />
                 <List />
                 <List />
-                <List />
-                <List />
+                <List /> */}
             </div>
         </>
     );

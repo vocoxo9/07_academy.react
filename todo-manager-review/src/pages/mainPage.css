@@ -1,0 +1,47 @@
+body {
+    background-color: #E9E9E9;
+}
+
+#root:has(.main-layout) {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+
+    padding: 0;
+}
+
+.main-layout {
+    display: flex;
+    height: 100vh;
+}
+
+.side-menu {
+    width: 400px;
+    background-color: #5087B5;
+    padding: 20px 30px;
+}
+
+.side-menu .menu-btns {
+    margin: 315px auto;
+}
+
+.side-menu .menu-btns .btn {
+    border-radius: 100px;
+    font-size: 1.2rem;
+    height: 70px;
+    background-color: #D9D9D9;
+}
+.side-menu .menu-btns .btn:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.side-menu .menu-btns .active {
+    background-color: #fff;
+    color: #5087B5;
+    font-weight: 700;
+}
+
+.todo-page {
+    flex: 1;
+    padding: 10rem 2rem;
+}
